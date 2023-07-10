@@ -6,5 +6,11 @@ Lien utile : https://medium.com/folkdevelopers/the-ultimate-guide-to-electron-wi
 
 Install electron : npm i electron
 
-Lancement de l'application : 1 / npm start - 2/ npm run electron-dev
+### Lancement de l'application 
 
+1 / npm start 
+2/ npm run electron-dev
+
+### Buil de l'application
+
+npm run build
