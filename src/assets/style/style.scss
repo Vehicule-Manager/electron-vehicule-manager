@@ -147,10 +147,26 @@ table td {
 /*Start client */
 
 .divEdit {
-   display: flex;
-   justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .divTable {
-    padding-inline : 2rem;
+    padding-inline: 2rem;
+}
+
+/* Vehicule */
+
+.modaleDelete {
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+
+    .modaleDeleteContent {
+       width: 50rem; 
+    }
 }
