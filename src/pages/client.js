@@ -6,14 +6,14 @@ import Delete from '../assets/img/delete.png';
 import Edit from '../assets/img/edit.png';
 
 const Client = () => {
-    const [clients, setUsers] = useState([]);
+    const [clients, setClients] = useState([]);
 
     useEffect(() => {
         const fetchUsers = async () => {
             try {
                 const response = await fetch(process.env.REACT_APP_API_URL + 'clients');
                 const data = await response.json();
-                setUsers(data);
+                setClients(data);
                 console.log(data);
             } catch (error) {
                 console.error('Une erreur s\'est produite lors de la récupération des utilisateurs :', error);
@@ -32,7 +32,7 @@ const Client = () => {
             if (response.ok) {
                 console.log('Client supprimé avec succès.');
                 // Réactualise la liste des clients automatiquement
-                setUsers(clients.filter(clients => clients.id_users !== clientId));
+                setClients(clients.filter(clients => clients.id_users !== clientId));
             } else {
                 console.error('Erreur lors de la suppression du client.');
             }
