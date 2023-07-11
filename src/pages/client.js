@@ -6,14 +6,14 @@ import Delete from '../assets/img/delete.png';
 import Edit from '../assets/img/edit.png';
 
 const Client = () => {
-    const [users, setUsers] = useState([]);
+    const [clients, setClients] = useState([]);
 
     useEffect(() => {
         const fetchUsers = async () => {
             try {
                 const response = await fetch(process.env.REACT_APP_API_URL + 'clients');
                 const data = await response.json();
-                setUsers(data);
+                setClients(data);
                 console.log(data);
             } catch (error) {
                 console.error('Une erreur s\'est produite lors de la récupération des utilisateurs :', error);
@@ -25,14 +25,14 @@ const Client = () => {
 
     const deleteClient = async (clientId) => {
         try {
-            const response = await fetch(`${process.env.REACT_APP_API_URL}clients/${clientId}`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}users/${clientId}`, {
                 method: 'DELETE',
             });
 
             if (response.ok) {
                 console.log('Client supprimé avec succès.');
                 // Réactualise la liste des clients automatiquement
-                setUsers(users.filter(user => user.id !== clientId));
+                setClients(clients.filter(clients => clients.id_users !== clientId));
             } else {
                 console.error('Erreur lors de la suppression du client.');
             }
@@ -57,16 +57,16 @@ const Client = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    {users.map(user => (
-                        <tr key={user.id}>
-                            <td>{user.civility}</td>
-                            <td>{user.lastname}</td>
-                            <td>{user.firstname}</td>
-                            <td>{user.birthDate}</td>
-                            <td>{user.address}</td>
+                    {clients.map(client => (
+                        <tr key={client.id}>
+                            <td>{client.civility}</td>
+                            <td>{client.lastname}</td>
+                            <td>{client.firstname}</td>
+                            <td>{client.birthDate}</td>
+                            <td>{client.address}</td>
                             <td className='divEdit'>
                                 <img src={Edit} alt="Edit" />
-                                <img src={Delete} alt="Delete" onClick={() => deleteClient(user.id)} />
+                                <img src={Delete} alt="Delete" onClick={() => deleteClient(client.id_users)} />
                             </td>
                         </tr>
                     ))}
