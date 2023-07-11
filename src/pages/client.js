@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Route, useNavigate } from 'react-router-dom';
+import { Button, Modal } from 'semantic-ui-react';
 import '../assets/style/style.scss';
 import Navbar from '../component/navbar';
 import Delete from '../assets/img/delete.png';
@@ -7,6 +8,9 @@ import Edit from '../assets/img/edit.png';
 
 const Client = () => {
     const [clients, setClients] = useState([]);
+    const [showModal, setShowModal] = useState(false);
+    const [selectedClientId, setSelectedClientId] = useState(null);
+
 
     useEffect(() => {
         const fetchUsers = async () => {
@@ -33,12 +37,22 @@ const Client = () => {
                 console.log('Client supprimé avec succès.');
                 // Réactualise la liste des clients automatiquement
                 setClients(clients.filter(clients => clients.id_users !== clientId));
+                closeModal();
             } else {
                 console.error('Erreur lors de la suppression du client.');
             }
         } catch (error) {
             console.error('Une erreur s\'est produite lors de la suppression du client :', error);
         }
+    };
+
+    const openModal = (clientId) => {
+        setSelectedClientId(clientId);
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
     };
 
     return (
@@ -66,13 +80,24 @@ const Client = () => {
                             <td>{client.address}</td>
                             <td className='divEdit'>
                                 <img src={Edit} alt="Edit" />
-                                <img src={Delete} alt="Delete" onClick={() => deleteClient(client.id_users)} />
+                                <img src={Delete} alt="Delete" onClick={() => openModal(client.id_users)} />
                             </td>
                         </tr>
                     ))}
                     </tbody>
                 </table>
             </div>
+            <Modal open={showModal} onClose={closeModal} size='mini'>
+                <Modal.Header>Êtes-vous sûr de vouloir supprimer cet utilisateur ?</Modal.Header>
+                <Modal.Actions>
+                    <Button negative onClick={closeModal}>
+                        Annuler
+                    </Button>
+                    <Button positive onClick={() => deleteClient(selectedClientId)}>
+                        Supprimer
+                    </Button>
+                </Modal.Actions>
+            </Modal>
         </div>
     );
 };
