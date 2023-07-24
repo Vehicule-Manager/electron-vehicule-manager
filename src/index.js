@@ -7,6 +7,7 @@ import Login from './pages/login';
 import Client from './pages/client';
 import Contrat from './pages/contrat';
 import Cars from './pages/voiture';
+import Articles from "./pages/articles";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/client" element={<Client />} />
         <Route path="/contrat" element={<Contrat />} />
         <Route path="/voiture" element={<Cars />} />
+        <Route path="/articles" element={<Articles />} />
       </Routes>
     </Router>
   </React.StrictMode>
