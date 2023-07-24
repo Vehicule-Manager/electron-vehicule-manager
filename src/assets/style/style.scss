@@ -167,6 +167,26 @@ table td {
     border: 0;
 
     .modaleDeleteContent {
-       width: 50rem; 
+        width: 50rem;
+    }
+}
+
+.iconAdd {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2em;
+
+    div {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        border : solid 2px black;
+        border-radius: 5px;
+        padding: 0.5em;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
