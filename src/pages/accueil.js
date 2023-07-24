@@ -13,12 +13,11 @@ const Accueil = () => {
                     <a href="/client"><h3>Client</h3></a>
                 </div>
                 <div>
-                    <a href="/contrat"><h3>Contrat</h3></a>
-                </div>
-                <div>
                     <a href="/voiture"><h3>Voiture</h3></a>
                 </div>
-
+                <div>
+                    <a href="/articles"><h3>Articles</h3></a>
+                </div>
             </div>
         </div>
     );

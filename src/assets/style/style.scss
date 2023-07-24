@@ -13,7 +13,7 @@
 .inputFormulaireConnection {
     margin-top: 2rem;
     padding: 0.5rem;
-    border: 0px;
+    border: 0;
     border-bottom: 2px solid;
 }
 
@@ -37,7 +37,7 @@
     background-color: #018bb5;
     color: white;
     margin-bottom: 0;
-    height: 2.5rem;
+    height: 2.75rem;
     justify-content: space-between;
 
     h1 {
@@ -58,7 +58,7 @@
 
     input {
         padding: 0.5rem;
-        border: 0px;
+        border: 0;
         border-bottom: 2px solid;
         margin-right: 0.5em;
     }
@@ -77,22 +77,28 @@
 .parent {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 4rem;
-    height: calc(100vh - (40px + 4rem));
-    gap: 20px;
+    margin-top: 10rem;
+    row-gap: 3rem;
     margin-inline: 1rem;
+    justify-content: space-evenly;
 
     div {
-        flex: 1 0 calc(33% - 20px);
+        flex: 0 0 calc(33% - 20px);
         background-color: rgb(230, 226, 226);
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-            rgba(17, 17, 26, 0.1) 0px 8px 24px,
-            rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px;
+        transition: 1.5s all ease;
         height: 150px;
+        border-radius: 5px;
         min-width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            box-shadow: inset 0 0 16px 10px rgba(17, 17, 26, 0.1), 0 0 16px 10px rgba(17, 17, 26, 0.1),
+            0 0 24px 20px rgba(17, 17, 26, 0.2), 0 0 56px 5px rgba(17, 17, 26, 0.3);
+            transform: scale(1.05);
+        }
     }
 
     a {
@@ -149,6 +155,14 @@ table td {
 .divEdit {
     display: flex;
     justify-content: space-around;
+
+    img {
+        transition: 1s all ease;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
 }
 
 .divTable {
@@ -167,6 +181,6 @@ table td {
     border: 0;
 
     .modaleDeleteContent {
-       width: 50rem; 
+       width: 50rem;
     }
 }
