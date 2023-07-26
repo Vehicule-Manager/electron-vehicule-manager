@@ -5,6 +5,7 @@ import '../assets/style/style.scss';
 import Navbar from '../component/navbar';
 import Delete from '../assets/img/delete.png';
 import Edit from '../assets/img/edit.png';
+import Add from "../assets/img/add.png";
 
 const Client = () => {
     const [clients, setClients] = useState([]);
@@ -34,12 +35,9 @@ const Client = () => {
             });
 
             if (response.ok) {
-                console.log('Client supprimé avec succès.');
                 // Réactualise la liste des clients automatiquement
                 setClients(clients.filter(clients => clients.id_users !== clientId));
                 closeModal();
-            } else {
-                console.error('Erreur lors de la suppression du client.');
             }
         } catch (error) {
             console.error('Une erreur s\'est produite lors de la suppression du client :', error);
@@ -58,6 +56,12 @@ const Client = () => {
     return (
         <div>
             <Navbar />
+            <div className='iconAdd'>
+                <div>
+                   <a href="add-client"><img src={Add} alt='Ajouter' /></a>
+                    <p>Ajouter un client</p>
+                </div>
+            </div>
             <div className='divTable'>
                 <table>
                     <thead>
