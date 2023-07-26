@@ -95,26 +95,11 @@ const AddClient = () => {
                 const response = await fetch(process.env.REACT_APP_API_URL + 'clients');
                 const data = await response.json();
                 setClients(data);
-                console.log(data);
             } catch (error) {
                 console.error('Une erreur s\'est produite lors de la récupération des clients :', error);
             }
         };
         fetchClients();
-    }, []);
-
-
-    useEffect(() => {
-        const fetchUsers = async () => {
-            try {
-                const response = await fetch(process.env.REACT_APP_API_URL + 'users');
-                const data = await response.json();
-                console.log(data);
-            } catch (error) {
-                console.error('Une erreur s\'est produite lors de la récupération des utilisateurs :', error);
-            }
-        };
-        fetchUsers();
     }, []);
 
     return (
