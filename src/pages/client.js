@@ -39,6 +39,8 @@ const Client = () => {
                 setClients(clients.filter(clients => clients.id_users !== clientId));
                 closeModal();
             }
+             } else {
+                console.error('Erreur lors de la suppression du client.');
         } catch (error) {
             console.error('Une erreur s\'est produite lors de la suppression du client :', error);
         }
