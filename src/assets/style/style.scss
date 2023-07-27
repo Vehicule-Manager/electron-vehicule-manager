@@ -96,7 +96,7 @@
 
         &:hover {
             box-shadow: inset 0 0 16px 10px rgba(17, 17, 26, 0.1), 0 0 16px 10px rgba(17, 17, 26, 0.1),
-            0 0 24px 20px rgba(17, 17, 26, 0.2), 0 0 56px 5px rgba(17, 17, 26, 0.3);
+                0 0 24px 20px rgba(17, 17, 26, 0.2), 0 0 56px 5px rgba(17, 17, 26, 0.3);
             transform: scale(1.05);
         }
     }
@@ -181,19 +181,25 @@ table td {
     border: 0;
 
     .modaleDeleteContent {
-       width: 50rem;
+        width: 50rem;
+    }
 }
 
-.iconAdd {
+.addVehicule {
     display: flex;
     justify-content: flex-end;
     margin: 2em;
+
+    a,
+    a:hover {
+        color: black;
+    }
 
     div {
         display: flex;
         gap: 1em;
         align-items: center;
-        border : solid 2px black;
+        border: solid 2px black;
         border-radius: 5px;
         padding: 0.5em;
         transition: all 0.3s ease;
@@ -202,4 +208,23 @@ table td {
             transform: scale(1.1);
         }
     }
+}
+
+/* Add véhicule */
+
+.formulaireAddVehicule {
+    display : flex; 
+    flex-direction: column;
+    align-items: space-evenly;
+    padding-inline: 10rem ;
+   h2 {
+    padding : 1em;
+    text-align: center;
+   }
+.elementForm {
+    width: 600px;
+}
+.buttonAdd {
+    width: 200px;
+}
 }
