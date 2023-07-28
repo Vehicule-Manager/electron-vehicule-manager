@@ -8,7 +8,8 @@ import Client from './pages/client';
 import Contrat from './pages/contrat';
 import Cars from './pages/voiture';
 import Articles from "./pages/articles";
-import AddClient from './pages/add-client';
+import AddClient from './pages/addClient';
+import AddArticles from "./pages/addArticles";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
@@ -18,7 +19,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Login />} />
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/client" element={<Client />} />
-        <Route path="/add-client" element={<AddClient />} />
+        <Route path="/add/client" element={<AddClient />} />
+        <Route path="/add/article" element={<AddArticles />} />
         <Route path="/contrat" element={<Contrat />} />
         <Route path="/voiture" element={<Cars />} />
         <Route path="/articles" element={<Articles />} />

@@ -190,7 +190,7 @@ table td {
   justify-content: flex-end;
   margin: 2em;
 
-  div {
+  a {
     display: flex;
     gap: 1em;
     align-items: center;
@@ -218,4 +218,26 @@ table td {
   margin-left: 75px;
   margin-right: 75px;
   margin-top:50px;
+}
+
+.addArticle {
+  h1 {
+    text-align: center;
+    padding-top: 25px;
+  }
+}
+
+.formulaireAddArticle {
+  display: grid;
+  margin: 75px 32px 0 75px;
+  row-gap: 1rem;
+
+  .ui.form textarea {
+    margin-bottom: 1rem;
+  }
+
+  .ck-editor-word-count {
+    text-align: right;
+    margin-bottom: 1rem !important;
+  }
 }

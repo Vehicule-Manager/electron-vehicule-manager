@@ -5,6 +5,7 @@ import '../assets/style/style.scss';
 import Navbar from '../component/navbar';
 import Delete from '../assets/img/delete.png';
 import Edit from '../assets/img/edit.png';
+import Add from "../assets/img/add.png";
 
 const Articles = () => {
     const [articles, setArticles] = useState([]);
@@ -54,6 +55,9 @@ const Articles = () => {
     return (
         <div>
             <Navbar />
+            <div className='iconAdd'>
+                <a href="add/article"><img src={Add} alt='Ajouter' /><p>Ajouter un client</p></a>
+            </div>
             <div className='divTable'>
                 <table>
                     <thead>
