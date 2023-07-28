@@ -59,10 +59,7 @@ const Client = () => {
         <div>
             <Navbar />
             <div className='iconAdd'>
-                <div>
-                   <a href="add-client"><img src={Add} alt='Ajouter' /></a>
-                    <p>Ajouter un client</p>
-                </div>
+                <a href="add/client"><img src={Add} alt='Ajouter' /><p>Ajouter un client</p></a>
             </div>
             <div className='divTable'>
                 <table>
