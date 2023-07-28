@@ -56,7 +56,7 @@ const Articles = () => {
         <div>
             <Navbar />
             <div className='iconAdd'>
-                <a href="add/article"><img src={Add} alt='Ajouter' /><p>Ajouter un client</p></a>
+                <a href="add/article"><img src={Add} alt='Ajouter' /><p>Ajouter un article</p></a>
             </div>
             <div className='divTable'>
                 <table>

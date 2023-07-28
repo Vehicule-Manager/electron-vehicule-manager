@@ -6,7 +6,7 @@ import {Form, TextArea, Button} from 'semantic-ui-react'
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
-const AddClient = () => {
+const AddArticle = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const [description, setDescription] = useState('');
@@ -125,4 +125,4 @@ const AddClient = () => {
     );
 };
 
-export default AddClient;
+export default AddArticle;
