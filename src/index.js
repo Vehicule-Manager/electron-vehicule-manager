@@ -8,6 +8,7 @@ import Client from './pages/client';
 import Contrat from './pages/contrat';
 import Cars from './pages/voiture';
 import Articles from "./pages/articles";
+import AddVehicule from "./pages/addVehicule";
 import AddClient from './pages/add-client';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -22,7 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/contrat" element={<Contrat />} />
         <Route path="/voiture" element={<Cars />} />
         <Route path="/articles" element={<Articles />} />
-      </Routes>
+        <Route path="/ajout-voiture" element={<AddVehicule />} />
+ </Routes>
     </Router>
   </React.StrictMode>
 );
