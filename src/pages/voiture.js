@@ -82,11 +82,13 @@ const Cars = () => {
     return (
         <div>
             <Navbar />
-            <div className='iconAdd'>
-                <div>
-                    <img src={Add} alt='Ajouter' />
-                    <p>Ajouter un véhicule</p>
-                </div>
+            <div className='addVehicule'>
+                <a href="/ajout-voiture">
+                    <div>
+                        <img src={Add} alt='Ajouter' />
+                        <p>Ajouter un véhicule</p>
+                    </div></a>
+
             </div>
 
             <div className='divTable'>

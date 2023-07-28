@@ -1,151 +1,174 @@
 // Page de connexion
 .logo {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
 }
 
 .formulaireConnection {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .inputFormulaireConnection {
-  margin-top: 2rem;
-  padding: 0.5rem;
-  border: 0;
-  border-bottom: 2px solid;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border: 0;
+    border-bottom: 2px solid;
 }
 
 .buttonFormulaireConnection {
-  margin-top: 2rem;
-  padding: 0.5rem;
-  border-radius: 30px;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 30px;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 // Fin de la page connexion
 /* Accueil */
 
 .bg-div {
-  display: flex;
-  align-items: center;
-  background-color: #018bb5;
-  color: white;
-  margin-bottom: 0;
-  height: 2.75rem;
-  justify-content: space-between;
-
-  h1 {
-    color: black;
-  }
-
-  img {
-    max-width: 2em;
-  }
-
-  a {
-    margin-inline: 1em;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #018bb5;
     color: white;
-    display: flex;
-    align-items: center;
-  }
+    margin-bottom: 0;
+    height: 2.75rem;
+    justify-content: space-between;
 
-  input {
-    padding: 0.5rem;
-    border: 0;
-    border-bottom: 2px solid;
-    margin-right: 0.5em;
-  }
+    h1 {
+        color: black;
+    }
 
-  .align-home {
-    display: flex;
-    align-items: center;
-  }
+    img {
+        max-width: 2em;
+    }
 
-  .logout {
-    display: flex;
-  }
+    a {
+        margin-inline: 1em;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        padding: 0.5rem;
+        border: 0;
+        border-bottom: 2px solid;
+        margin-right: 0.5em;
+    }
+
+    .align-home {
+        display: flex;
+        align-items: center;
+    }
+
+    .logout {
+        display: flex;
+    }
 
 }
 
 .parent {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 10rem;
-  row-gap: 3rem;
-  margin-inline: 1rem;
-  justify-content: space-evenly;
-
-  div {
-    flex: 0 0 calc(33% - 20px);
-    background-color: rgb(230, 226, 226);
-    box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px;
-    transition: 1.5s all ease;
-    height: 150px;
-    border-radius: 5px;
-    min-width: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    row-gap: 3rem;
+    margin-inline: 1rem;
+    justify-content: space-evenly;
 
-    &:hover {
-      box-shadow: inset 0 0 16px 10px rgba(17, 17, 26, 0.1), 0 0 16px 10px rgba(17, 17, 26, 0.1),
-      0 0 24px 20px rgba(17, 17, 26, 0.2), 0 0 56px 5px rgba(17, 17, 26, 0.3);
-      transform: scale(1.05);
+    div {
+        flex: 0 0 calc(33% - 20px);
+        background-color: rgb(230, 226, 226);
+        box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px;
+        transition: 1.5s all ease;
+        height: 150px;
+        border-radius: 5px;
+        min-width: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10rem;
+        row-gap: 3rem;
+        margin-inline: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+
+        div {
+            flex: 0 0 calc(33% - 20px);
+            background-color: rgb(230, 226, 226);
+            box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px;
+            transition: 1.5s all ease;
+            height: 150px;
+            border-radius: 5px;
+            min-width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                box-shadow: inset 0 0 16px 10px rgba(17, 17, 26, 0.1), 0 0 16px 10px rgba(17, 17, 26, 0.1),
+                    0 0 24px 20px rgba(17, 17, 26, 0.2), 0 0 56px 5px rgba(17, 17, 26, 0.3);
+                transform: scale(1.05);
+            }
+        }
+
+        &:hover {
+            box-shadow: inset 0 0 16px 10px rgba(17, 17, 26, 0.1), 0 0 16px 10px rgba(17, 17, 26, 0.1),
+                0 0 24px 20px rgba(17, 17, 26, 0.2), 0 0 56px 5px rgba(17, 17, 26, 0.3);
+            transform: scale(1.05);
+        }
     }
-  }
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
 }
 
 table {
-  border-collapse: collapse;
-  width: 100%;
-  color: #333;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  text-align: left;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-  margin-bottom: 50px;
+    border-collapse: collapse;
+    width: 100%;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 table th {
-  background-color: #018bb5;
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #ccc;
+    background-color: #018bb5;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
 }
 
 table tr:nth-child(even) td {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 table tr:hover td {
-  background-color: #ffedcc;
+    background-color: #ffedcc;
 }
 
 table td {
-  background-color: #fff;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  font-weight: bold;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
 }
 
 /* End Accueil */
@@ -153,71 +176,122 @@ table td {
 /*Start client */
 
 .divEdit {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 
-  img {
-    transition: 1s all ease;
+    img {
+        transition: 1s all ease;
 
-    &:hover {
-      transform: scale(1.5);
+        &:hover {
+            transform: scale(1.5);
+        }
     }
-  }
 }
 
 .divTable {
-  padding-inline: 2rem;
+    padding-inline: 2rem;
 }
 
 /* Vehicule */
 
 .modaleDelete {
-  height: 100vh;
-  position: absolute;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
 
-  .modaleDeleteContent {
-    width: 50rem;
-  }
+    .modaleDeleteContent {
+        width: 50rem;
+    }
+}
+
+.addVehicule {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2em;
+
+    a,
+    a:hover {
+        color: black;
+    }
+
+    div {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        border: solid 2px black;
+        border-radius: 5px;
+        padding: 0.5em;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .modaleDeleteContent {
+            width: 50rem;
+        }
+    }
 }
 
 .iconAdd {
-  display: flex;
-  justify-content: flex-end;
-  margin: 2em;
-
-  a {
     display: flex;
-    gap: 1em;
-    align-items: center;
-    border: solid 2px black;
-    border-radius: 5px;
-    padding: 0.5em;
-    transition: all 0.3s ease;
+    justify-content: flex-end;
+    margin: 2em;
 
-    &:hover {
-      transform: scale(1.1);
+    a {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        border: solid 2px black;
+        border-radius: 5px;
+        padding: 0.5em;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
-  }
 }
 
 /* Client */
 .addClient {
-  h1 {
-    text-align: center;
-    padding-top: 25px;
-  }
+    h1 {
+        text-align: center;
+        padding-top: 25px;
+    }
 }
 
 .formulaireAddClient {
-  display: grid;
-  margin-left: 75px;
-  margin-right: 75px;
-  margin-top:50px;
+    display: grid;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 50px;
+}
+
+/* Add véhicule */
+
+.formulaireAddVehicule {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    padding-inline: 10rem;
+
+    h2 {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .elementForm {
+        width: 600px;
+    }
+
+    .buttonAdd {
+        width: 200px;
+    }
 }
 
 .addArticle {
