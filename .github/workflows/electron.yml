@@ -25,3 +25,4 @@ jobs:
 
       - name: Create .exe build
         run: npm run electron-pack
+        
