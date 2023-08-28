@@ -1,6 +1,8 @@
 {
-  "name": "desktop",
+  "name": "Vehicule Manager",
+  "description": "Vehicule Manager application desktop",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "main": "public/main.js",
   "dependencies": {
