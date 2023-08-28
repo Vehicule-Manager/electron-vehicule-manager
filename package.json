@@ -3,6 +3,9 @@
   "description": "Vehicule Manager application desktop",
   "version": "0.1.0",
   "license": "MIT",
+  "authors": {
+    "name": "CDA",
+    "email": "test@test.com"},
   "private": true,
   "main": "public/main.js",
   "dependencies": {
