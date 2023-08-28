@@ -66,11 +66,11 @@ const AddClient = () => {
                 optionalAddress: optionalAddress,
                 zipCode: zipCode,
                 city: city,
-                id_users: 7,
+                id_users: 6,
                 id_creditInfos: 5,
             };
 
-            const response = await fetch(`${process.env.REACT_APP_API_URL}clients`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}add/clients`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
