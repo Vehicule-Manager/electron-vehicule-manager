@@ -5,7 +5,8 @@
   "license": "MIT",
   "authors": {
     "name": "CDA",
-    "email": "test@test.com"},
+    "email": "test@test.com"
+  },
   "private": true,
   "main": "public/main.js",
   "dependencies": {
@@ -57,6 +58,7 @@
     "@electron-forge/maker-rpm": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
     "@electron-forge/maker-zip": "^6.1.1",
+    "@electron-forge/publisher-github": "^6.4.1",
     "electron": "^24.4.0",
     "electron-builder": "^23.6.0",
     "electron-packager": "^17.1.1"
@@ -69,6 +71,21 @@
     },
     "win": {
       "target": "nsis"
+    }
+  },
+  "config": {
+    "forge": {
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "erikhofer",
+              "name": "electron-publish-example"
+            }
+          }
+        }
+      ]
     }
   }
 }
