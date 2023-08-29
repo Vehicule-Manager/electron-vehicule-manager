@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 /out
+/VehiculeManager-linux-x64
 .pnp.js
 
 # testing
